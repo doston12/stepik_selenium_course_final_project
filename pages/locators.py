@@ -35,3 +35,5 @@ class BasketPageLocators():
     BASKET_TOTAL = (By.XPATH, "//th[normalize-space()='Basket total']/following-sibling::th")
     SHIPPING_TOTAL = (By.XPATH, "//th[normalize-space()='Free shipping']/following-sibling::th")
     ITEM_NAMES = (By.XPATH, "//div[@class='basket-items']//div/h3/a")
+
+    BASKET_EMPTY = (By.XPATH, "//div[@id='content_inner']/p")
