@@ -1,0 +1,19 @@
+name: Hello World Github Actions
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello
+        run: |
+          echo "Hello, world"
+          echo "My dear friends"
+
+      - name: say goodbye
+        run: echo "Bye, bye"
+
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: concurrent step
+        run: echo "This is a concurrent step from second-job, it will execute simultenausly with first-job"
