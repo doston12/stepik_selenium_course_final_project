@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: concurrent step
-        run: echo "This is a concurrent step from second-job, it will execute simultenausly with first-job"
+        run: echo "${{ toJSON(github) }}"
